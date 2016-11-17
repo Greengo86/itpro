@@ -1,0 +1,112 @@
+/*Обнуляем паддинги для колонок*/
+.col-xs-1,.col-sm-1,.col-md-1,.col-lg-1,
+.col-xs-2,.col-sm-2,.col-md-2,.col-lg-2,
+.col-xs-3,.col-sm-3,.col-md-3,.col-lg-3,
+.col-xs-4,.col-sm-4,.col-md-4,.col-lg-4,
+.col-xs-5,.col-sm-5,.col-md-5,.col-lg-5,
+.col-xs-6,.col-sm-6,.col-md-6,.col-lg-6,
+.col-xs-7,.col-sm-7,.col-md-7,.col-lg-7,
+.col-xs-8,.col-sm-8,.col-md-8,.col-lg-8,
+.col-xs-9,.col-sm-9,.col-md-9,.col-lg-9,
+.col-xs-10,.col-sm-10,.col-md-10,.col-lg-10,
+.col-xs-11,.col-sm-11,.col-md-11,.col-lg-11,
+.col-xs-12,.col-sm-12,.col-md-12,.col-lg-12 {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+.main-menu ul {
+
+}
+
+.main-menu ul li a {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#templatemo_logo {
+    background-color: #0085c2;
+    background-image: url(../images/logo1.png);
+    background-position: -48px 8px;
+}
+
+#phone_number {
+    background-image: url(../images/phone1.png);
+    background-position: 13% 55%;
+    background-repeat: no-repeat;
+    display: block;
+    height: 102px;
+}
+
+#phone_number .phone {
+    float: right;
+    padding: 28px 32px 0 15px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/*Эффект текста для номера телефона*/
+#blink7 {
+    text-shadow: 0 0 5px #8cddff, 0 0 10px #8cddff, 0 0 15px #8cddff, 0 0 20px #0085c2, 0 0 30px #0085c2, 0 0 35px #0085c2, 0 0 40px #0085c2, 0 0 0 #0085c2;
+}
+
+@-webkit-keyframes pulsate {
+    50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+@keyframes pulsate {
+    50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+
+.slider-caption {
+    bottom: 5px;
+}
+
+/*Синий цвет параграфов внизу иконок*/
+.service-item p{
+    color: #0085c2;
+}
+.slider-caption h2 {
+    color: #0582b9;
+    text-align: right;
+}
+
+.bx-controls-direction {
+    bottom: 111px;
+}
+
+.product-item .item-thumb .overlay {
+    border: 3px solid #0582b9;
+}
+
+.product-item .item-thumb .overlay .overlay-inner a.view-detail {
+    color: #0582b9;
+}
+
+.product-item span em.price {
+    color: #0582b9;
+}
+
+.item-small {
+    background-color: #ffffff;
+}
+
+.item-small h4 {
+    font-size: 17px;
+    color: #0582b9;
+    font-weight: 600;
+}
+
+input.button {
+    color: #0582b9;
+}
+
+
+.site-footer {
+    background-color: #0582b9;
+}
