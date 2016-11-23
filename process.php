@@ -96,11 +96,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $mail = new PHPMailer;
 
     $mail->CharSet = 'UTF-8'; 
-    $mail->From      = 'email@mysite.ru';
+    $mail->From      = 'it-nnPRO.ru';
     $mail->FromName  = 'Имя сайта';
     $mail->Subject   = 'Сообщение с формы обратной связи';
     $mail->Body      = $output;
-    $mail->AddAddress( 'myemail@mail.ru' );
+    $mail->AddAddress('it-nnpro@yandex.ru');
 
     // отправляем письмо
     if ($mail->Send()) {

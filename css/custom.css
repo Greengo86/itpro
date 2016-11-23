@@ -106,7 +106,10 @@ input.button {
     color: #0582b9;
 }
 
-
 .site-footer {
     background-color: #0582b9;
+}
+
+.product-item .item-thumb .overlay .overlay-inner a.view-detail {
+    background: rgba(0, 0, 0, 0) no-repeat scroll center 20px;
 }

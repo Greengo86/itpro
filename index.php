@@ -169,14 +169,14 @@
                     <span class="service-icon first"></span>
                     <h3>Клиентоориентированность</h3>
                     <p>Глубокое понимание и эффективное удовлетворение потребностей клиентов</p>
-                </div> <!-- /.service-item -->
+                </div> <!-- руки /.service-item -->
             </div> <!-- /.col-md-3 -->
             <div class="col-md-3 col-sm-6">
                 <div class="service-item">
                     <span class="service-icon second"></span>
                     <h3>Ответственность за результат</h3>
                     <p>Гарантия на всю проделанную работу</p>
-                </div> <!-- /.service-item -->
+                </div> <!--блокнот /.service-item -->
             </div> <!-- /.col-md-3 -->
             <div class="col-md-3 col-sm-6">
                 <div class="service-item">
@@ -274,7 +274,7 @@
                     <div class="item-thumb">
                         <div class="overlay">
                             <div class="overlay-inner">
-                                <a href="#nogo" class="view-detail">Ремонт Ноутбука</a>
+                                <a href="#nogo" class="view-detail">Любые виды ремонта аппаратной части ноутбука</a>
                             </div>
                         </div> <!-- /.overlay -->
                         <img src="images/products/product4.jpg" alt="">
@@ -323,7 +323,7 @@
                     <div class="item-thumb">
                         <div class="overlay">
                             <div class="overlay-inner">
-                                <a href="#nogo" class="view-detail">Создание сайта</a>
+                                <a href="#nogo" class="view-detail">Поддержка сайта</a>
                             </div>
                         </div> <!-- /.overlay -->
                         <img src="images/products/product7.jpg" alt="">
