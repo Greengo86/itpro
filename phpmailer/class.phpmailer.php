@@ -1157,8 +1157,8 @@ class PHPMailer
             if ($this->has8bitChars($domain) and @mb_check_encoding($domain, $this->CharSet)) {
                 $domain = mb_convert_encoding($domain, 'UTF-8', $this->CharSet);
                 if (($punycode = defined('INTL_IDNA_VARIANT_UTS46') ?
-                    idn_to_ascii($domain, 0, INTL_IDNA_VARIANT_UTS46) :
-                    idn_to_ascii($domain)) !== false) {
+                        idn_to_ascii($domain, 0, INTL_IDNA_VARIANT_UTS46) :
+                        idn_to_ascii($domain)) !== false) {
                     return substr($address, 0, $pos) . $punycode;
                 }
             }

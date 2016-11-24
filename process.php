@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $name = $_POST['name'];
         if (!validStringLength($name,2,30)) {
             $data['name']='Поля имя содержит недопустимое количество символов.';
-            $data['result']='error';
+            $data['result']='error строчка 25';
         }
     } else {
         $data['result']='error';
@@ -32,26 +32,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $email = $_POST['email'];
         if (!filter_var($email,FILTER_VALIDATE_EMAIL)) {
             $data['email']='Поле email введено неправильно';
-            $data['result']='error';
+            $data['result']='error строчка35';
         }
     } else {
-        $data['result']='error';
+        $data['result']='error строчка38';
     }
     //получить сообщение, которое ввёл пользователь
     if (isset($_POST['message'])) {
         $message = $_POST['message'];
         if (!validStringLength($message,20,500)) {
             $data['message']='Поле сообщение содержит недопустимое количество символов.';
-            $data['result']='error';
+            $data['result']='error строчка45';
         }
     } else {
-        $data['result']='error';
+        $data['result']='error строчка48';
     }
     //получить капчу, которую ввёл пользователь
     if (isset($_POST['captcha'])) {
         $captcha = $_POST['captcha'];
     } else {
-        $data['result']='error';
+        $data['result']='error строчка54';
     }
     // если не существует ни одной ошибки, то прододжаем...
     if ($data['result']=='success') {
@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 } else {
     //данные не были отправлены методом пост
-    $data['result']='error';
+    $data['result']='error строчка66';
 }
 
 // дальнейшие действия (ошибок не обнаружено)
@@ -77,7 +77,7 @@ if ($data['result']=='success') {
     if (file_put_contents(dirname(__FILE__).'/message.txt', $output, FILE_APPEND | LOCK_EX)) {
         $data['result']='success';
     } else {
-        $data['result']='error';
+        $data['result']='error строчка80';
     }
     //2. Отправляем на почту
     // включить файл PHPMailerAutoload.php
@@ -94,12 +94,12 @@ if ($data['result']=='success') {
     $mail->FromName  = 'Имя сайта';
     $mail->Subject   = 'Сообщение с формы обратной связи';
     $mail->Body      = $output;
-    $mail->AddAddress('it-nnpro@yandex.ru');
+    $mail->addAddress('it-nnpro@yandex.ru');
     // отправляем письмо
-    if ($mail->Send()) {
+    if ($mail->send()) {
         $data['result']='success';
     } else {
-        $data['result']='error';
+        $data['result']='error строчка102';
     }
 }
 // формируем ответ, который отправим клиенту

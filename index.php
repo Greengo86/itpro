@@ -166,14 +166,14 @@
                     <span class="service-icon first"></span>
                     <h3>Клиентоориентированность</h3>
                     <p>Глубокое понимание и эффективное удовлетворение потребностей клиентов</p>
-                </div> <!-- руки /.service-item -->
+                </div> <!-- /.service-item -->
             </div> <!-- /.col-md-3 -->
             <div class="col-md-3 col-sm-6">
                 <div class="service-item">
                     <span class="service-icon second"></span>
                     <h3>Ответственность за результат</h3>
                     <p>Гарантия на всю проделанную работу</p>
-                </div> <!--блокнот /.service-item -->
+                </div> <!-- /.service-item -->
             </div> <!-- /.col-md-3 -->
             <div class="col-md-3 col-sm-6">
                 <div class="service-item">
