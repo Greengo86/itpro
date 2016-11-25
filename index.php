@@ -9,11 +9,8 @@
     <title>IT-nnPRO</title>
     <meta name="description" content="Ремонт мобильных гаджетов, ноутбуков, планшетов, создание сайтов в Нижнем Новгороде">
     <!--
-
     Sprint Template
-
     http://www.templatemo.com/tm-401-sprint
-
     -->
     <meta name="viewport" content="width=device-width">
 
@@ -406,7 +403,7 @@
         </div>
     </div>
 </div>
- <!-- /#products -->
+<!-- /#products -->
 
 <div class="site-footer">
     <div class="container">

@@ -81,7 +81,7 @@ $(function() {
 		//метод передачи запроса - POST
         type: "POST",
 		//URL-адрес запроса 
-        url: "/process.php",
+        url: "process.php",
         //передаваемые данные - formData
         data: formData,
         // не устанавливать тип контента, т.к. используется FormData
