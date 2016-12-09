@@ -331,10 +331,11 @@
     </div> <!-- /.container -->
 </div> <!-- /#products -->
 
-<div id="contact" class="container">
+<h1 class="h2 page-header text-center">Bootstrap - AJAX форма обратной связи</h1>
+
+<div class="container">
     <div class="row">
         <div class="col-sm-6 col-sm-offset-3">
-            <h1 class="section-title">Контакты</h1>
             <!-- Контейнер, содержащий форму обратной связи -->
             <div class="panel panel-info">
                 <!-- Заголовок контейнера -->
@@ -396,7 +397,6 @@
                         <!-- Кнопка, отправляющая форму -->
                         <button type="submit" class="btn btn-primary pull-right">Отправить сообщение</button>
                     </form><!-- Конец формы -->
-
                 </div>
             </div><!-- Конец контейнера -->
 

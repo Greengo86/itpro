@@ -1,8 +1,9 @@
 <?php
 //открываем сессию
 session_start();
+var_dump($_SERVER);
 // переменная в которую будем сохранять результат работы
-$data['result']='error';
+$data['result']='error5';
 // функция для проверки длины строки
 function validStringLength($string,$min,$max) {
     $length = mb_strlen($string,'UTF-8');
@@ -22,36 +23,36 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $name = $_POST['name'];
         if (!validStringLength($name,2,30)) {
             $data['name']='Поля имя содержит недопустимое количество символов.';
-            $data['result']='error строчка 25';
+            $data['result']='error25';
         }
     } else {
-        $data['result']='error';
+        $data['result']='error28';
     }
     //получить email, которое ввёл пользователь
     if (isset($_POST['email'])) {
         $email = $_POST['email'];
         if (!filter_var($email,FILTER_VALIDATE_EMAIL)) {
             $data['email']='Поле email введено неправильно';
-            $data['result']='error строчка35';
+            $data['result']='error35';
         }
     } else {
-        $data['result']='error строчка38';
+        $data['result']='error38';
     }
     //получить сообщение, которое ввёл пользователь
     if (isset($_POST['message'])) {
         $message = $_POST['message'];
         if (!validStringLength($message,20,500)) {
             $data['message']='Поле сообщение содержит недопустимое количество символов.';
-            $data['result']='error строчка45';
+            $data['result']='error45';
         }
     } else {
-        $data['result']='error строчка48';
+        $data['result']='error48';
     }
     //получить капчу, которую ввёл пользователь
     if (isset($_POST['captcha'])) {
         $captcha = $_POST['captcha'];
     } else {
-        $data['result']='error строчка54';
+        $data['result']='error54';
     }
     // если не существует ни одной ошибки, то прододжаем...
     if ($data['result']=='success') {
@@ -63,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 } else {
     //данные не были отправлены методом пост
-    $data['result']='error строчка66';
+    $data['result']='error66';
 }
 
 // дальнейшие действия (ошибок не обнаружено)
@@ -77,7 +78,7 @@ if ($data['result']=='success') {
     if (file_put_contents(dirname(__FILE__).'/message.txt', $output, FILE_APPEND | LOCK_EX)) {
         $data['result']='success';
     } else {
-        $data['result']='error строчка80';
+        $data['result']='error80';
     }
     //2. Отправляем на почту
     // включить файл PHPMailerAutoload.php
@@ -99,7 +100,7 @@ if ($data['result']=='success') {
     if ($mail->send()) {
         $data['result']='success';
     } else {
-        $data['result']='error строчка102';
+        $data['result']='error102';
     }
 }
 // формируем ответ, который отправим клиенту
